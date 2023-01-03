@@ -23,17 +23,17 @@ class Router
      * This method scans the controllers' directory and register all routes.
      * @throws Exception
      */
-    public function load(): void
+    public function load(string $dir): void
     {
         // Empty the routes list
         $this->routes = [];
 
         // Getting the files list in "Controller" directory
-        $scannedFiles = DirectoryScanner::scanDirectory(__DIR__ . '/../../Controller');
+        $scannedFiles = DirectoryScanner::scanDirectory($dir);
 
         // Verifying that the controllers' directory exists
-        if (!is_dir(__DIR__ . '/../../src/Controller')) {
-            throw new Exception('The directory "Controller" does not exist.');
+        if (!is_dir($dir)) {
+            throw new Exception('The directory you are trying to reach does not exist.');
         }
 
         // Iterating over the files list

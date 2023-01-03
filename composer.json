@@ -1,7 +1,7 @@
 {
-    "name": "marcuzzi/pulse_php",
+    "name": "marcuzzi1/pulse_php",
     "description": "This is a little PHP Framework made by Quentin MARCUZZI. It is designed to be lightweitht and may not be complete because I am still learning by developing this project.",
-    "type": "project",
+    "type": "project-skeleton",
     "autoload": {
         "psr-4": {
             "PulsePhp\\": "src/"
