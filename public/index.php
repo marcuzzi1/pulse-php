@@ -10,4 +10,8 @@
 // Import(s)
 
 // Autoload
+use PulsePhpBundle\Routes\Router;
+
 require __DIR__ . '/../vendor/autoload.php';
+
+$router = new Router();
